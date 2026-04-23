@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Recipe Finder</h1>
+
+<div class="controls">
+    <input type="text" id="ingredients" placeholder="Enter ingredients (e.g. milk, eggs)">    
+    <button onclick="searchRecipes()">Search</button>
+</div>
+
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
