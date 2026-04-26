@@ -1,0 +1,38 @@
+/* Center everything on screen */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Container for buttons */
+.menu {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-btn {
+    display: inline-block; /* 🔥 THIS fixes "still looks like link" */
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #22c55e;
+    color: white;
+    text-align: center;
+    min-width: 220px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}

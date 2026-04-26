@@ -96,3 +96,61 @@ button:hover {
     padding-left: 18px;
     margin: 5px 0;
 }
+
+.menu-btn {
+    display: inline-block; /* 🔥 THIS fixes "still looks like link" */
+    color: black;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.create-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.card {
+    position: relative; /* needed for absolute star */
+}
+
+.fav-star {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* 🔥 moved from right → left */
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.fav-star:hover {
+    transform: scale(1.2);
+}
+
+.fav-star.active {
+    opacity: 1;
+}
+
+.favorites-btn {
+    position: fixed;       /* 🔥 stays on screen */
+    top: 20px;             /* distance from top */
+    right: 20px;           /* 👉 move to RIGHT side */
+    
+    padding: 12px 20px;
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+
+    z-index: 1000;         /* stays above everything */
+    transition: 0.2s;
+}
+
+.favorites-btn:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}
